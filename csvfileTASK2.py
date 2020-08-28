@@ -31,26 +31,11 @@ if __name__ == '__main__':
     rows=[]
     while i<=50:
 
-        str_path = 'Profile ({}).pdf'.format(i)
+        str_path = "./ALL 50 pdf's/Profile ({}).pdf".format(i)
         data_forcsv=extract_text_from_pdf(str_path)
-        #data_forcsv = re.findall("[a-zA-Z]+",data_forcsv )
         i+=1
-        #lst_data= word_tokenize(data_forcsv)
-        #lst_data=replaced_data.split(" ") '
-        #unwanted_words=set(stopwords.words('english'))
-        #lst_data=[ele for ele in data_forcsv if not ele in unwanted_words]
-        #lst_data = [item for item in lst_data if not item.isdigit()]
         rows.append(data_forcsv)
         
     df =pd.DataFrame(rows)
-    print(df.head())
-    df.to_csv ('testingforcsv.csv', index = True, header=False,index_label = 'profile')
-
-
-    '''import csv
-
-        file =open('csvfile.csv','w+',newline='')
-
-        with file:
-            write =csv.writer(file)
-            write.writerows(data_forcsv)'''
+    df.to_csv ('finalCSVtask2.csv', index = True, header=False,index_label = 'profile')
+    print('task2completed')
