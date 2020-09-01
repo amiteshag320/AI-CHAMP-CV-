@@ -7,9 +7,10 @@ from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfparser import PDFParser
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('api1.html')
