@@ -8,7 +8,7 @@ Natural Language Preprocessing steps
 ## TASK 2
 (Extracting...)
 * I used ' PDFminer ' to Extract Data from All pdfs using a while loop
-* And converted the extacted text to Pandas `DataFrame ` 
+* And converted the extacted text to Pandas `DataFrame `
 * And after that I converted the DataFrame to `finalCSVtask2.csv `
 
 ## TASK 3
@@ -22,9 +22,10 @@ Natural Language Preprocessing steps
 
 ## TASK 4
 (Two API's)
+for `SECONDAPI` you need to run a command in command prompt for downloading nltk.stopwords , command is " python -m nltk.downloader stopwords"
 
 I have used `flask` for making APIs , to use my API you should go through `TASK4 API` folder.The first API first downloads the pdffile in an `uploads` folder after then it extarcts the text part and gives output in JSON format.
-* There is a folder `template` which consists of two templates one is  api1.html and api2.html 
+* There is a folder `template` which consists of two templates one is  api1.html and api2.html
 * So the folders **uploads**, **template/api1.html**,`FIRSTAPI.py` are important for successfull running of my first API.
 The second API takes text data as input and gives the **10 most Frequent words** the text data and also **10 most essential words** in the text data it also outputs in `JSON` format.
 * I have used `Counter` and `IDF` value for calculating the frequency and keywords .
