@@ -35,7 +35,7 @@ if __name__ == '__main__':
     cnt_lst=[]
     while i<=50:
 
-        str_path = "./ALL 50 pdf's/Profile ({}).pdf".format(i)
+        str_path = "./ALL_50_pdf's/Profile ({}).pdf".format(i)
         data_forcsv=extract_text_from_pdf(str_path)
         data_forcsv = re.findall("[a-zA-Z]+",data_forcsv )
         i+=1

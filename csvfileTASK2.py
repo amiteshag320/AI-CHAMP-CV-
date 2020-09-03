@@ -31,7 +31,7 @@ if __name__ == '__main__':
     rows=[]
     while i<=50:
 
-        str_path = "./ALL 50 pdf's/Profile ({}).pdf".format(i)
+        str_path = "./ALL_50_pdf's/Profile ({}).pdf".format(i)
         data_forcsv=extract_text_from_pdf(str_path)
         i+=1
         rows.append(data_forcsv)
