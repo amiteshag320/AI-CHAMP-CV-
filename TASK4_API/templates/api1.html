@@ -31,7 +31,7 @@
         .upload-input{
             content: 'Select some files';
             display: inline-block;
-            background: linear-gradient(top, #f9f9f9, #e3e3e3);
+            background: linear-gradient(top, #f9f9f9, #e3e3es3);
             border: 1px solid #999;
             border-radius: 3px;
             padding: 5px 8px;
@@ -113,7 +113,7 @@
             console.log(formdata.get("file"));
         
             $.ajax({
-                url : "http://127.0.0.1:5000/api1/data",
+                url : "https://pfdtotext01.herokuapp.com/api1/data",
                 type: "POST",
                 data : formdata,
                 contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
