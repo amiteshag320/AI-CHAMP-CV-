@@ -33,3 +33,11 @@ The second API takes text data as input and gives the **10 most Frequent words**
 * So the folders **listfile**, **template/api2.html**,`SECONDAPI.py` are important for successfull running of my second API.
 * Also added one file anmed `app.py` which have both the APIs in it and can be accessed with routenames `/ap1/` and `/api2/` .
 * **NOTE** : The IDF valus of keywords are according to the text present in 50 pdf files present in folder ` ALL 50 pdf's `.
+
+
+Also you can access these api in my website 
+
+https://pfdtotext01.herokuapp.com/api1/
+
+https://pfdtotext01.herokuapp.com/api2/
+
