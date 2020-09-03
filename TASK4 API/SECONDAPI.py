@@ -13,11 +13,11 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/api2/', methods=['GET', 'POST'])
 def index():
     return render_template('api2.html')
 
-@app.route('/data', methods=['GET', 'POST'])
+@app.route('/api2/data', methods=['GET', 'POST'])
 def data():
     if request.method == 'POST':
         text = request.form['text']
